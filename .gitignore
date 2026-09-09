@@ -1,0 +1,17 @@
+# Environment files
+.env
+.env.*
+
+# Python (ml-service)
+ml-service/venv/
+**/__pycache__/
+*.pyc
+
+# Node (frontend)
+frontend/node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+.idea/
+*.iml

@@ -1,0 +1,19 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: fraud-detection-mysql
+    restart: unless-stopped
+
+    environment:
+      MYSQL_DATABASE: fraud_detection
+      MYSQL_ROOT_PASSWORD: Ayitu023113
+
+    ports:
+      - "3307:3306"
+
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
